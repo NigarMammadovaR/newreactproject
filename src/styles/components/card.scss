@@ -1,0 +1,119 @@
+.cardTitle{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.categoryFilter{
+    display: flex;
+   
+    li{
+        margin-left: 17px;
+        cursor: pointer;
+    }
+    li:hover{
+        border-bottom: 2px solid red;
+    }
+}
+.cardComponent{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    
+    figure{
+    margin: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 250px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3px;
+    
+ 
+    
+    .hide{
+        visibility:hidden;
+        opacity: 0;
+        
+        
+        
+        .fa-heart{
+        color: grey;
+        border: 1px solid;
+        width: 30px;
+        height: 30px;
+        border-radius: 90%;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        margin-left: 15px;
+       
+    }
+    
+    .fa-bag-shopping{
+        color: grey;
+        border: 1px solid;
+        width: 30px;
+        height: 30px;
+        border-radius: 90%;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        margin-left: 15px;
+    }
+    .fa-up-right-and-down-left-from-center{
+        color: grey;
+        border: 1px solid;
+        width: 30px;
+        height: 30px;
+        border-radius: 90%;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+    }
+    img{
+        padding-top: 5px;
+        width: 90%;
+        height: 60%;
+    }
+    
+
+    figcaption{
+        padding-top: 30px;
+    }
+    span{
+        padding-top: 30px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+}
+
+figure:hover {
+    .hide {
+        visibility: visible; 
+        opacity: 1;
+        color: red;
+        .fa-bag-shopping:hover{
+            transform: rotate(360deg);
+            transition: 1s;
+        }
+        .fa-up-right-and-down-left-from-center:hover{
+            transform: rotate(360deg);
+            transition: 1s;
+        }
+        .fa-heart:hover{
+            transform: rotate(360deg);
+            transition: 1s;
+        }
+      }
+}
+}
+
+@media screen and (max-width:575px){
+    .cardComponent{
+        width: 100%;
+        figure{
+            width: 370px;
+            height: 550px;
+        }
+    }
+}

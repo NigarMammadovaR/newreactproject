@@ -1,0 +1,48 @@
+   .hotTrendd{
+            width: 100%;
+          }
+
+ .cards{
+    width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 25px 0;
+       
+        h2{
+
+         font-family: "Montserrat", sans-serif;
+         text-align: start;
+        }
+
+ }
+       
+
+ .hotTrend{
+    display: flex;
+    flex-direction: column;
+
+
+ }
+
+ .bestSeller{
+    display: flex;
+    flex-direction: column;
+ }
+.feature{
+    display: flex;
+    flex-direction: column;
+}
+ figure{
+    display: flex;
+    margin: 15px 0;
+    figcaption{
+        margin: 15px 0;
+    }
+   .title{
+    display: flex;
+    flex-direction: column;
+ }
+ }
+
+ 

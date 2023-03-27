@@ -1,0 +1,184 @@
+.home{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    max-height: 640px;
+    margin-top: 8px;
+    
+}
+
+
+.leftCard{
+    background-image: url("../images/category-1.jpg.webp");
+   background-position: center;
+   width: 50%;
+   .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     height: 640px;
+    align-items: left;
+    margin-left: 20px;
+
+    h1{
+        font-family: "Cookie", cursive;
+        font-size: 55px;
+    }
+    a{
+        color: black;
+        text-decoration: underline;
+    }
+   }
+    
+}
+
+.rightCard{
+    
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .card1{
+            width: 49.4%;
+            height: 314px;
+        background-image: url("../images/category-2.jpg.webp");
+           background-size: cover;
+    background-position: top center;
+    margin-right: 5px;
+
+    }
+   .card2{
+    width: 49.4%;
+    height: 314px;
+        background-image: url("../images/category-3.jpg.webp");
+        background-size: cover;
+        background-position: top center;
+   }
+    
+    
+        .card3{
+            width: 49.4%;
+            height: 314px;
+        background-image: url("../images/category-4.jpg.webp");
+        background-size: cover;
+        background-position: top center;
+        margin-right: 5px;
+     
+   }
+   .card4{
+    width: 49.4%;
+    height: 314px;
+    background-image: url("../images/category-5.jpg.webp");
+    background-size: cover;
+    background-position: top center;
+   }
+
+    }
+   
+
+@media screen and (max-width:1200px) {
+    .leftCard{
+         width: 100%;
+        
+    }
+    .rightCard{
+        width: 100%;
+    }
+}
+
+.images{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap; 
+     position: relative;
+   
+
+      img:hover {
+        opacity: 0.1;
+      }
+
+    img{
+        width: 16.6%;
+      
+        
+     }
+    
+     img:hover:before{
+        content:"Ashion shop";
+   
+     }
+}
+
+
+@media screen and (max-width:575px){
+    .images{
+          img{
+            margin-left: 2px;
+            width: 100%;
+          }
+    
+    
+  
+    .rightCard{
+        
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+       .card1{
+        width: 100%;
+   
+    }
+    .card2{
+     width: 100%;
+   
+        
+    }
+    .card3{
+        width: 100%;
+       
+    }
+    .card4{
+        width: 100%;
+      
+    }
+    }
+   
+}
+
+.cardTitle{
+    height: 80px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .newProduct{
+        margin-left: 55px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                margin-left: 25px;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 300;
+                text-transform: capitalize;
+                cursor: pointer;
+            }
+            li:hover{
+                border-bottom: 2px solid #ca1515;;
+                  
+            }
+        }
+    
+}}
+
+
